@@ -1,5 +1,5 @@
 
-pub fn day01a(puzzle_input: String) -> i32 {
+pub fn day01a(puzzle_input: &str) -> i32 {
     let mut calibration_sum = 0;
     let calibration_lines = puzzle_input.lines();
     for calibration_line in calibration_lines{
@@ -15,4 +15,15 @@ pub fn day01a(puzzle_input: String) -> i32 {
         calibration_sum += outString.parse::<i32>().unwrap();
     }
     return calibration_sum
+}
+
+pub fn day01b(puzzle_input: &str) -> i32 {
+    return 32;
+
+}
+
+fn tokenise_number_words(unprocessed_line: &str) -> &str {
+    let nums = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
+    return "yo";
+
 }
